@@ -1,7 +1,11 @@
 return {
   require('plugins.autopairs'),
+  require('plugins.gitsigns'),
+  require('plugins.lsp-signature'),
+  require('plugins.tree-sitter'),
   require('plugins.multi-cursor'),
   require('plugins.vim-be-good'),
+  require('plugins.nvim-ts-autotag'),
   require('plugins.typescript'),
   require('plugins.wakatime'),require('plugins.catppuccin'), require('plugins.lualine'), require('plugins.telescope'),
   require('plugins.web-devicons'), require('plugins.nvim-tree'), require('plugins.auto-session'),

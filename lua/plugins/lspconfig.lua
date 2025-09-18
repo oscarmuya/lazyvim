@@ -15,6 +15,7 @@ return {
     require('mason-lspconfig').setup({
       ensure_installed = {
         'pyright', -- python
+        "tailwindcss"
       },
       handlers = {
         pyright = function()
@@ -29,6 +30,13 @@ return {
                 }
               end
             end,
+          }
+        end,
+        -- Add a specific handler for tailwindcss
+        tailwindcss = function()
+          local lspconfig = require('lspconfig')
+          lspconfig.tailwindcss.setup {
+            -- You can add specific settings here if needed in the future
           }
         end,
 
