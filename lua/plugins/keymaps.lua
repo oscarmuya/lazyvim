@@ -16,3 +16,10 @@ vim.keymap.set("n", "<leader>mp", ":MarkdownPreviewToggle<cr>")
 
 -- nvim-comment
 vim.keymap.set({"n", "v"}, "<leader>/", ":CommentToggle<cr>")
+
+--- lsp saga
+vim.keymap.set('n', '<leader>ld', '<cmd>Lspsaga show_line_diagnostics<CR>', { desc = "Show line diagnostics" })
+vim.keymap.set('n', '<leader>la', '<cmd>Lspsaga code_action<CR>', { desc = "Code action" })
+
+vim.keymap.set('n', '<leader>ln', '<cmd>Lspsaga diagnostic_jump_next<CR>', { desc = "Next diagnostic" })
+vim.keymap.set('n', '<leader>lp', '<cmd>Lspsaga diagnostic_jump_prev<CR>', { desc = "Previous diagnostic" })
